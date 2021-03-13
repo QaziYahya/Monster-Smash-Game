@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monster Smash!</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #stage {
+        width: 484px;
+        height: 512px;
+        margin: 0 auto;
+        transform: translateY(6rem);
+      }
+      canvas {
+        padding: 0 15px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      #title {
+        text-align: center;
+      }
+      #timer {
+        margin-top: 12rem;
+        margin-left: -21rem;
+        text-align: center;
+      }
+      #monsters-smashed {
+        margin-top: -3rem;
+        margin-left: 15rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="stage">
+      <h1 id="title">Monster Smash!</h1>
+    </div>
+    <h2 id="timer">Time Left:<span id="time-left">30</span></h2>
+    <h2 id="monsters-smashed">Monster Smashed:<span id="smashed">0</span></h2>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
